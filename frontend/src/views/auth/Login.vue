@@ -1,107 +1,26 @@
 <template>
   <div class="login-layout">
-    <div class="animated-bg">
-      <div class="knowledge-node node-1">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-2">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-3">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5z" />
-          <path d="M2 17l10 5 10-5" />
-          <path d="M2 12l10 5 10-5" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-4">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <ellipse cx="12" cy="5" rx="9" ry="3" />
-          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-5">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.35-4.35" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-6">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path
-            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-          <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-          <line x1="12" y1="22.08" x2="12" y2="12" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-7">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-          <polyline points="14 2 14 8 20 8" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-8">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-9">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-10">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="3" />
-          <path
-            d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-11">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 11l3 3L22 4" />
-          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-        </svg>
-      </div>
-      <div class="knowledge-node node-12">
-        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polygon
-            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-        </svg>
-      </div>
-
-      <svg class="knowledge-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <line class="connection-line line-1" x1="20" y1="15" x2="35" y2="25" />
-        <line class="connection-line line-2" x1="35" y1="25" x2="55" y2="20" />
-        <line class="connection-line line-3" x1="55" y1="20" x2="85" y2="12" />
-        <line class="connection-line line-4" x1="8" y1="35" x2="25" y2="45" />
-        <line class="connection-line line-5" x1="25" y1="45" x2="65" y2="48" />
-        <line class="connection-line line-6" x1="20" y1="60" x2="60" y2="75" />
-        <line class="connection-line line-7" x1="20" y1="15" x2="20" y2="60" />
-        <line class="connection-line line-8" x1="55" y1="20" x2="45" y2="50" />
-        <line class="connection-line line-9" x1="65" y1="48" x2="90" y2="38" />
-        <line class="connection-line line-10" x1="40" y1="70" x2="75" y2="80" />
-        <line class="connection-line line-11" x1="35" y1="25" x2="25" y2="45" />
-        <line class="connection-line line-12" x1="75" y1="30" x2="65" y2="48" />
-      </svg>
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="ambient-grid"></div>
+      <div class="ambient-glow ambient-glow--one"></div>
+      <div class="ambient-glow ambient-glow--two"></div>
+      <div class="ambient-orbit ambient-orbit--one"></div>
+      <div class="ambient-orbit ambient-orbit--two"></div>
+      <span class="ambient-signal ambient-signal--one"></span>
+      <span class="ambient-signal ambient-signal--two"></span>
+      <span class="ambient-signal ambient-signal--three"></span>
     </div>
 
-    <!-- Logo - Top Left -->
-    <a href="" target="_blank" class="header-logo" :title="$t('common.github')">
-      <img src="@/assets/img/weknora.png" alt="WeKnora" class="logo-image" />
-    </a>
+    <header class="login-header">
+      <a href="" class="brand-lockup" :title="$t('common.github')">
+        <span class="brand-symbol"><img src="/favicon.ico" alt="" /></span>
+        <span class="brand-copy">
+          <strong>E-Brain</strong>
+          <small>{{ $t('platform.brandLine') }}</small>
+        </span>
+      </a>
 
-    <!-- Header Links - Top Right -->
-    <div class="header-links">
+      <div class="header-links">
       <!-- <a href="https://weknora.weixin.qq.com" target="_blank" class="header-link" :title="$t('common.website')">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
           stroke-linecap="round">
@@ -140,23 +59,37 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </header>
 
-    <!-- Left Showcase Section -->
-    <div class="showcase-section">
+    <main class="login-main">
+      <section class="showcase-section">
       <div class="showcase-content">
-        <p class="showcase-subtitle">{{ $t('platform.subtitle') }}</p>
+        <div class="showcase-kicker">
+          <span class="kicker-index">01</span>
+          <span>{{ $t('platform.subtitle') }}</span>
+        </div>
+        <h1 class="showcase-title">{{ $t('platform.heroTitle') }}</h1>
         <p class="showcase-description">{{ $t('platform.description') }}</p>
 
         <div class="feature-tags">
-          <span class="tag">{{ $t('platform.rag') }}</span>
-          <span class="tag">{{ $t('platform.agent') }}</span>
-          <span class="tag">{{ $t('platform.wiki') }}</span>
-          <span class="tag">{{ $t('platform.hybridSearch') }}</span>
+          <span class="tag"><i></i>{{ $t('platform.rag') }}</span>
+          <span class="tag"><i></i>{{ $t('platform.agent') }}</span>
+          <span class="tag"><i></i>{{ $t('platform.wiki') }}</span>
+          <span class="tag"><i></i>{{ $t('platform.hybridSearch') }}</span>
         </div>
 
-        <!-- Swiper Carousel -->
+
+
+
+
+<!--         
         <div class="carousel-container">
+          <div class="carousel-heading">
+            <span>{{ $t('platform.carouselLabel') }}</span>
+            <span class="carousel-heading__line"></span>
+            <span class="carousel-heading__status">LIVE SYSTEM VIEW</span>
+          </div>
           <swiper :modules="modules" :slides-per-view="1" :loop="true" :autoplay="{
             delay: 4000,
             disableOnInteraction: false,
@@ -164,17 +97,30 @@
             :pagination="{ clickable: true, dynamicBullets: false }" :speed="800" class="screenshot-swiper">
             <swiper-slide v-for="(slide, index) in slides" :key="index">
               <div class="slide-content">
+                <div class="slide-index">0{{ index + 1 }}</div>
                 <img :src="slide.image" :alt="slide.title" class="slide-image" />
+                <div class="slide-caption">
+                  <strong>{{ slide.title }}</strong>
+                  <span>{{ slide.description }}</span>
+                </div>
               </div>
             </swiper-slide>
           </swiper>
-        </div>
-      </div>
-    </div>
+        </div> -->
 
-    <!-- Right Form Section -->
-    <div class="form-section">
+
+
+
+
+      </div>
+      </section>
+
+      <section class="form-section">
       <div class="form-panel">
+        <div class="panel-intro">
+          <span class="panel-intro__eyebrow">{{ $t('platform.workspaceAccess') }}</span>
+          <span class="panel-intro__rule"></span>
+        </div>
         <!-- Login Card -->
         <div class="form-card" v-if="!isRegisterMode">
           <!-- invite_only 模式下共享链接停在登录卡，同样需要邀请上下文。 -->
@@ -335,7 +281,8 @@
           </div>
         </div>
       </div>
-    </div>
+      </section>
+    </main>
   </div>
 </template>
 
@@ -382,7 +329,7 @@ const { formatRole, roleIcon } = useRoleLabel()
 const modules = [Autoplay, EffectFade, Pagination]
 
 // Carousel slides data
-const slides = [
+const slides = computed(() => [
   {
     image: screenshot4,
     title: t('platform.carousel.agenticRagTitle'),
@@ -403,7 +350,7 @@ const slides = [
     title: t('platform.carousel.smartDocRetrievalTitle'),
     description: t('platform.carousel.smartDocRetrievalDesc')
   }
-]
+])
 
 // Form references
 const formRef = ref()
@@ -1817,6 +1764,797 @@ onMounted(async () => {
 }
 </style>
 
+<!-- E-Brain login visual system: the legacy styles above remain scoped to
+     the original selectors for compatibility, while this layer defines the
+     new split-screen experience. Authentication markup and handlers are
+     intentionally unchanged. -->
+<style lang="less" scoped>
+.login-layout {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100svh;
+  min-height: 640px;
+  overflow: hidden;
+  color: #f7f6f2;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(224, 167, 87, 0.18), transparent 24%),
+    radial-gradient(circle at 62% 88%, rgba(80, 116, 112, 0.2), transparent 30%),
+    #111318;
+}
+
+.ambient-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ambient-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.26;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(90deg, black 0%, black 55%, transparent 92%);
+}
+
+.ambient-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(2px);
+  animation: ambientDrift 14s ease-in-out infinite alternate;
+}
+
+.ambient-glow--one {
+  top: 14%;
+  left: 27%;
+  width: 280px;
+  height: 280px;
+  background: rgba(218, 158, 74, 0.1);
+}
+
+.ambient-glow--two {
+  right: 28%;
+  bottom: -100px;
+  width: 360px;
+  height: 360px;
+  background: rgba(80, 145, 132, 0.11);
+  animation-delay: -5s;
+}
+
+.ambient-orbit {
+  position: absolute;
+  border: 1px solid rgba(226, 181, 105, 0.22);
+  border-radius: 50%;
+  transform: rotate(-24deg);
+  animation: orbitFloat 16s ease-in-out infinite;
+}
+
+.ambient-orbit::after {
+  content: '';
+  position: absolute;
+  top: 9%;
+  left: 18%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ddb16c;
+  box-shadow: 0 0 18px rgba(221, 177, 108, 0.9);
+}
+
+.ambient-orbit--one {
+  top: -180px;
+  left: 28%;
+  width: 620px;
+  height: 330px;
+}
+
+.ambient-orbit--two {
+  right: 32%;
+  bottom: -250px;
+  width: 560px;
+  height: 300px;
+  border-color: rgba(121, 163, 153, 0.18);
+  animation-delay: -8s;
+}
+
+.ambient-signal {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #dcae64;
+  box-shadow: 0 0 0 7px rgba(220, 174, 100, 0.08), 0 0 20px rgba(220, 174, 100, 0.7);
+  animation: signalPulse 3.4s ease-in-out infinite;
+}
+
+.ambient-signal--one { top: 29%; left: 43%; }
+.ambient-signal--two { top: 63%; left: 13%; animation-delay: -1.4s; }
+.ambient-signal--three { right: 39%; bottom: 20%; animation-delay: -2.2s; }
+
+.login-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px clamp(24px, 4vw, 68px);
+  box-sizing: border-box;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #f7f6f2;
+  text-decoration: none;
+}
+
+.brand-symbol {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border: 1px solid rgba(238, 196, 123, 0.45);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.04);
+
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  strong {
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  small {
+    color: rgba(247, 246, 242, 0.52);
+    font-size: 9px;
+    line-height: 1;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+}
+
+.header-links {
+  position: relative;
+  top: auto;
+  right: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-link {
+  color: rgba(247, 246, 242, 0.82);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 12px;
+  box-shadow: none;
+  backdrop-filter: blur(14px);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.11);
+    border-color: rgba(239, 195, 119, 0.42);
+    transform: translateY(-1px);
+  }
+}
+
+.language-switch button {
+  color: rgba(247, 246, 242, 0.86);
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(255, 255, 255, 0.13);
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.11);
+    border-color: rgba(239, 195, 119, 0.42);
+  }
+}
+
+.language-dropdown {
+  top: calc(100% + 10px);
+  min-width: 170px;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 14px;
+  background: rgba(28, 30, 37, 0.96);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.language-option {
+  border-radius: 9px;
+  color: rgba(247, 246, 242, 0.8);
+
+  &:hover,
+  &.active {
+    color: #f2c77e;
+    background: rgba(231, 182, 102, 0.1);
+  }
+}
+
+.login-main {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(370px, 0.88fr);
+  gap: clamp(26px, 5vw, 92px);
+  width: min(100%, 1540px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 94px clamp(24px, 4vw, 68px) 26px;
+  box-sizing: border-box;
+}
+
+.showcase-section,
+.form-section {
+  min-width: 0;
+  padding: 0;
+  position: relative;
+}
+
+.showcase-section {
+  display: flex;
+  align-items: center;
+}
+
+.showcase-content {
+  width: min(100%, 710px);
+  margin: 0;
+  z-index: 2;
+}
+
+.showcase-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 21px;
+  color: #ddb16c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.kicker-index {
+  display: inline-grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid rgba(221, 177, 108, 0.5);
+  border-radius: 9px;
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+.showcase-title {
+  max-width: 680px;
+  margin: 0;
+  color: #f6f4ee;
+  font-size: clamp(43px, 5.2vw, 78px);
+  font-weight: 640;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.showcase-description {
+  max-width: 560px;
+  margin: 24px 0 24px;
+  color: rgba(247, 246, 242, 0.63);
+  font-size: clamp(15px, 1.3vw, 18px);
+  line-height: 1.65;
+}
+
+.feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 26px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9px;
+  color: rgba(247, 246, 242, 0.68);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+
+  i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #dcb06b;
+    box-shadow: 0 0 10px rgba(220, 176, 107, 0.8);
+  }
+}
+
+.carousel-container {
+  width: min(100%, 690px);
+  margin-top: 0;
+}
+
+.carousel-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 10px 2px;
+  color: rgba(247, 246, 242, 0.5);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.carousel-heading__line {
+  width: 48px;
+  height: 1px;
+  background: rgba(221, 177, 108, 0.5);
+}
+
+.carousel-heading__status {
+  color: rgba(247, 246, 242, 0.28);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.screenshot-swiper {
+  height: clamp(220px, 29vh, 320px);
+  padding: 0 0 28px;
+  border: 0;
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+
+  :deep(.swiper-wrapper) {
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  :deep(.swiper-pagination) {
+    bottom: 3px !important;
+    left: 0;
+    text-align: left;
+  }
+
+  :deep(.swiper-pagination-bullet) {
+    width: 5px;
+    height: 5px;
+    margin: 0 5px 0 0 !important;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    transition: width 260ms ease, background 260ms ease;
+  }
+
+  :deep(.swiper-pagination-bullet-active) {
+    width: 25px;
+    border-radius: 5px;
+    background: #ddb16c;
+  }
+}
+
+.slide-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(222, 177, 108, 0.28);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(221, 177, 108, 0.16), transparent 25%),
+    radial-gradient(circle at 15% 90%, rgba(79, 137, 128, 0.14), transparent 35%),
+    linear-gradient(135deg, #171a20 0%, #0f1116 58%, #191b20 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), inset 0 0 45px rgba(255, 255, 255, 0.025);
+}
+
+.slide-content::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 20%, rgba(241, 202, 137, 0.16) 48%, transparent 68%);
+  transform: translateX(-100%);
+  animation: slideSheen 8s ease-in-out infinite;
+}
+
+.slide-index {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  z-index: 2;
+  color: rgba(247, 246, 242, 0.42);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.slide-image {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  bottom: 52px;
+  left: 17px;
+  z-index: 1;
+  width: calc(100% - 34px);
+  height: calc(100% - 69px);
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(29, 33, 38, 0.13);
+}
+
+.slide-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 13px;
+  left: 18px;
+  z-index: 3;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+
+  strong {
+    overflow: hidden;
+    color: #f7f6f2;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  span {
+    overflow: hidden;
+    color: rgba(247, 246, 242, 0.52);
+    font-size: 10px;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-panel {
+  width: min(100%, 440px);
+  max-width: 440px;
+  margin: 0;
+  z-index: 2;
+}
+
+.panel-intro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px 4px;
+  color: rgba(247, 246, 242, 0.45);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.panel-intro__rule {
+  width: 42px;
+  height: 1px;
+  background: rgba(221, 177, 108, 0.55);
+}
+
+.form-card {
+  width: 100%;
+  max-height: calc(100svh - 144px);
+  overflow-y: auto;
+  padding: clamp(25px, 3vw, 38px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+  box-sizing: border-box;
+  background: #f7f6f2 !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22), 0 1px 0 rgba(255, 255, 255, 0.8) inset !important;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(28, 30, 36, 0.24) transparent;
+}
+
+.form-card::-webkit-scrollbar { width: 5px; }
+.form-card::-webkit-scrollbar-thumb { border-radius: 99px; background: rgba(28, 30, 36, 0.24); }
+
+.invite-banner {
+  margin-bottom: 18px;
+  border-color: rgba(33, 35, 42, 0.12);
+  background: rgba(33, 35, 42, 0.045);
+}
+
+.form-header {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-title {
+  margin: 0 0 8px;
+  color: #1b1d23;
+  font-size: clamp(29px, 3vw, 38px);
+  font-weight: 670;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.form-welcome {
+  max-width: 330px;
+  color: rgba(27, 29, 35, 0.54);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.form-hint {
+  margin-top: 14px;
+  color: #6e542a;
+  background: rgba(221, 177, 108, 0.14);
+}
+
+.form-content {
+  :deep(.t-form-item__label) {
+    margin-bottom: 7px;
+    color: rgba(27, 29, 35, 0.78);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  :deep(.t-form-item) {
+    margin-bottom: 15px;
+  }
+
+  :deep(.t-input) {
+    min-height: 48px;
+    border: 1px solid rgba(27, 29, 35, 0.15) !important;
+    border-radius: 13px;
+    background: #fff !important;
+    box-shadow: none !important;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus-within {
+      border-color: rgba(184, 133, 54, 0.8) !important;
+      box-shadow: 0 0 0 4px rgba(221, 177, 108, 0.13) !important;
+    }
+
+    .t-input__inner {
+      color: #1b1d23;
+      font-size: 14px;
+    }
+  }
+}
+
+.submit-button,
+.oidc-button,
+.register-cta__button {
+  min-height: 48px;
+  border-radius: 13px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.submit-button {
+  margin: 15px 0 12px;
+  color: #f9f8f4 !important;
+  background: #1b1d23 !important;
+  border-color: #1b1d23 !important;
+  box-shadow: 0 10px 22px rgba(27, 29, 35, 0.18);
+
+  &:hover {
+    background: #343740 !important;
+    border-color: #343740 !important;
+    transform: translateY(-1px);
+  }
+}
+
+.register-cta {
+  margin-top: 3px;
+}
+
+.register-cta__divider {
+  margin: 8px 0 11px;
+  color: rgba(27, 29, 35, 0.42);
+  font-size: 11px;
+
+  span {
+    color: inherit;
+    background: #f7f6f2 !important;
+  }
+
+  &::before {
+    border-color: rgba(27, 29, 35, 0.1);
+  }
+}
+
+.register-cta__button {
+  color: #292c34 !important;
+  border-color: rgba(27, 29, 35, 0.18) !important;
+  background: transparent !important;
+
+  &:hover {
+    color: #6e542a !important;
+    border-color: rgba(184, 133, 54, 0.65) !important;
+    background: rgba(221, 177, 108, 0.1) !important;
+  }
+}
+
+.oidc-divider {
+  margin: 12px 0 8px;
+
+  span {
+    background: #f7f6f2 !important;
+  }
+
+  &::before {
+    border-color: rgba(27, 29, 35, 0.1);
+  }
+}
+
+.oidc-button {
+  color: #292c34 !important;
+  border-color: rgba(27, 29, 35, 0.16) !important;
+  background: #fff !important;
+}
+
+.login-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(27, 29, 35, 0.1);
+
+  .feature-item {
+    display: block;
+    margin: 0;
+    color: rgba(27, 29, 35, 0.54);
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .feature-icon {
+    display: grid;
+    width: 21px;
+    height: 21px;
+    margin: 0 0 7px;
+    color: #8f672b;
+    background: rgba(221, 177, 108, 0.2);
+    font-size: 11px;
+  }
+
+  .feature-text {
+    display: block;
+  }
+}
+
+.form-footer {
+  border-color: rgba(27, 29, 35, 0.1);
+
+  .link-button {
+    color: #8f672b;
+
+    &:hover { color: #61461e; }
+  }
+}
+
+@keyframes ambientDrift {
+  from { transform: translate3d(-12px, 4px, 0) scale(0.96); opacity: 0.6; }
+  to { transform: translate3d(18px, -16px, 0) scale(1.05); opacity: 1; }
+}
+
+@keyframes orbitFloat {
+  0%, 100% { transform: rotate(-24deg) translate3d(0, 0, 0); opacity: 0.6; }
+  50% { transform: rotate(-18deg) translate3d(10px, 14px, 0); opacity: 1; }
+}
+
+@keyframes signalPulse {
+  0%, 100% { transform: scale(0.75); opacity: 0.48; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+@keyframes slideSheen {
+  0%, 55% { transform: translateX(-100%); }
+  75%, 100% { transform: translateX(100%); }
+}
+
+@media (max-height: 780px) and (min-width: 901px) {
+  .login-header { padding-top: 18px; padding-bottom: 18px; }
+  .login-main { padding-top: 76px; padding-bottom: 18px; }
+  .showcase-title { font-size: clamp(38px, 4.8vw, 64px); }
+  .showcase-description { margin: 17px 0; }
+  .feature-tags { margin-bottom: 18px; }
+  .screenshot-swiper { height: 215px; }
+  .form-card { max-height: calc(100svh - 112px); padding: 24px 28px; }
+}
+
+@media (max-width: 900px) {
+  .login-layout {
+    height: auto;
+    min-height: 100svh;
+    overflow-y: auto;
+  }
+
+  .login-header {
+    position: relative;
+    padding: 18px 20px;
+  }
+
+  .login-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    height: auto;
+    padding: 24px 20px 36px;
+  }
+
+  .showcase-section { align-items: flex-start; }
+  .showcase-content { width: 100%; }
+  .showcase-title { max-width: 700px; font-size: clamp(40px, 8vw, 62px); }
+  .carousel-container { width: 100%; }
+  .form-section { justify-content: stretch; }
+  .form-panel { width: 100%; max-width: 520px; margin: 0 auto; }
+  .form-card { max-height: none; }
+}
+
+@media (max-width: 520px) {
+  .brand-copy small { display: none; }
+  .header-links .link-text { display: inline; }
+  .header-link { padding: 8px 10px; }
+  .showcase-title { font-size: 42px; }
+  .showcase-description { margin-top: 17px; font-size: 14px; }
+  .feature-tags { gap: 6px; }
+  .tag { padding: 7px 9px; font-size: 10px; }
+  .screenshot-swiper { height: 205px; }
+  .slide-caption { display: block; }
+  .slide-caption span { display: block; margin-top: 3px; }
+  .form-card { padding: 24px 20px; border-radius: 22px; }
+  .login-features { gap: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-glow,
+  .ambient-orbit,
+  .ambient-signal,
+  .slide-content::after { animation: none; }
+}
+</style>
+
 <style lang="less">
 html[theme-mode="dark"] {
   .login-layout {
@@ -1894,5 +2632,44 @@ html[theme-mode="dark"] {
   .login-features .feature-icon {
     background: rgba(6, 176, 77, 0.15);
   }
+}
+</style>
+
+<style lang="less" scoped>
+/* Keep the new visual system consistent when the app theme is dark. */
+html[theme-mode="dark"] .login-layout {
+  background:
+    radial-gradient(circle at 10% 12%, rgba(224, 167, 87, 0.18), transparent 24%),
+    radial-gradient(circle at 62% 88%, rgba(80, 116, 112, 0.2), transparent 30%),
+    #111318 !important;
+}
+
+html[theme-mode="dark"] .header-link,
+html[theme-mode="dark"] .language-switch button {
+  color: rgba(247, 246, 242, 0.86) !important;
+  background: rgba(255, 255, 255, 0.055) !important;
+  border-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+html[theme-mode="dark"] .form-card {
+  color: #1b1d23;
+  background: #f7f6f2 !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22), 0 1px 0 rgba(255, 255, 255, 0.8) inset !important;
+}
+
+html[theme-mode="dark"] .form-content :deep(.t-input) {
+  color: #1b1d23 !important;
+  background: #fff !important;
+  border-color: rgba(27, 29, 35, 0.15) !important;
+}
+
+html[theme-mode="dark"] .register-cta__divider span,
+html[theme-mode="dark"] .oidc-divider span {
+  background: #f7f6f2 !important;
+}
+
+html[theme-mode="dark"] .login-features .feature-icon {
+  color: #8f672b !important;
+  background: rgba(221, 177, 108, 0.2) !important;
 }
 </style>
