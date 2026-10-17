@@ -63,3 +63,6 @@ miniprogram/project.private.config.json
 
 # Locally built BrowserSkill runtime and extension bundles
 /artifacts/browserskill/
+
+# 部署产物 (含随机密码的 .env 和 zip, 勿提交)
+deploy/dist/

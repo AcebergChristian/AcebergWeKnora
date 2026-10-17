@@ -1,0 +1,9 @@
+# 部署覆盖文件：使用 Docker Hub 上预构建的定制镜像（本机无需源码、无需编译）
+# 由 build-and-push.sh 自动生成，请勿手动修改
+services:
+  frontend:
+    image: __DOCKERHUB_USER__/weknora-ui:__TAG__
+  app:
+    image: __DOCKERHUB_USER__/weknora-app:__TAG__
+  docreader:
+    image: __DOCKERHUB_USER__/weknora-docreader:__TAG__
